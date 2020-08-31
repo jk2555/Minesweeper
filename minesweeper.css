@@ -1,0 +1,109 @@
+#game {
+    padding: 13px;
+    font-family: minesweeperFont;
+    display: inline-block;
+    background-color: lightgrey;
+    border-style: outset;
+    border-color:white;
+    border-width: 4px;
+}
+
+#top {
+    border-style: inset;
+    border-color: white;
+    min-width: 288px;
+    width:288px;
+    height:62px;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+#restart {
+    background-image: url("Images/smiley.jpg");
+    background-size: 44px 44px;
+    height: 46px;
+    width: 46px;
+    outline: none;
+
+}
+
+#topLeft{
+    position: absolute;
+    height:46px;
+    width:91px;
+    top:8px;
+    left:13px;
+    line-height: 46px;
+}
+#topMid{
+    position: absolute;
+    top:8px;
+    left:50%;
+    margin-left: -23px;
+
+}
+
+#topRight{
+    position: absolute;
+    height:46px;
+    width: 91px;
+    top:8px;
+    right: 13px;
+}
+
+.display {
+    font-family: dseg;
+    color: red;
+    font-size: 42px;
+    z-index: 2;
+    position: absolute;
+    letter-spacing: -4px;
+    
+}
+
+.behind{
+    background-color: black;
+    font-family: dseg;
+    color: rgb(75, 0, 0);
+    font-size: 42px;
+    position: absolute;
+    letter-spacing: -4px;
+    z-index: 1;
+
+}
+
+#board {
+    border-style: inset;
+    border-color: white;
+}
+
+.cell {
+    background-color: lightgrey;
+    border-style: outset;
+    border-color: white;
+    border-width: 4px;
+    height: 32px;
+    width: 32px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    font-size: 20px;
+    outline-style: none;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: minesweeperFont;
+    
+
+}
+
+
+
+@font-face{
+    font-family: minesweeperFont;
+    src: url("Fonts/mine-sweeper.ttf");
+}
+
+@font-face{
+    font-family: dseg;
+    src: url("Fonts/DSEG7ClassicMini-Bold.ttf");
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type = "text/css" href="minesweeper.css">
+    </head>
+    <body>
+        <button onclick="setDifficulty('b')">Beginner</button>
+        <button onclick="setDifficulty('i')">Intermediate</button>
+        <button onclick="setDifficulty('e')">Expert</button>
+        <br>
+        <div id = "game">
+            <div id = "top">
+                <div id = "topLeft">
+                    <div id = "count" class = "display"></div>
+                    <div class = "behind">888</div>
+                </div>
+                <div id = "topMid">
+                    <button id = "restart" onclick= "restart()" class = "topChild"> </button>
+                </div>
+                <div id = "topRight">
+                    <div id="time" class = "display">000</div>
+                    <div class = "behind">888</div>
+                </div>
+            </div>
+            <div id = "board"></div>
+        </div>
+        <p id = "results"></p>
+
+
+    </body>
+    <script src="minesweeper.js"></script>
+</html>
